@@ -157,30 +157,30 @@ body {
 		display: block;
 		width: vmin(40);
 		height: vmin(40);
-		position: relative;
+		// position: relative;
 
-		&--active {
-			svg {
-				display:none;
-			}
-		}
+		// &--active {
+		// 	svg {
+		// 		display:none;
+		// 	}
+		// }
 
-		span {
-			position: absolute;
-			top: vmin(20);
-			left: 58vw;
-			width: 100%;
-			height: vmin(2);
-			background-color: #000000;
-			@include rotate(45deg);
-			@include anim(0.3s, 0.3s);
+		// span {
+		// 	position: absolute;
+		// 	top: vmin(20);
+		// 	left: 58vw;
+		// 	width: 100%;
+		// 	height: vmin(2);
+		// 	background-color: #000000;
+		// 	@include rotate(45deg);
+		// 	@include anim(0.3s, 0.3s);
 
-		}
-		& span ~ span {
-			top: vmin(20);
-			@include rotate(-45deg);
-			@include anim(0.3s, 0.3s);
-		}
+		// }
+		// & span ~ span {
+		// 	top: vmin(20);
+		// 	@include rotate(-45deg);
+		// 	@include anim(0.3s, 0.3s);
+		// }
 	}
 
 	.header__logo {
@@ -235,6 +235,7 @@ body {
 	.header__nav--open {
 		transition: all 0.3s ease-in;
 		left: 0;
+		// visibility: visible;
 	}
 
 	.header__item {

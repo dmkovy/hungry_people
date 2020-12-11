@@ -3,7 +3,18 @@
 const burger = document.querySelector('.burger'),
 	headerNav = document.querySelector('.header__nav');
 
-burger.addEventListener('click', e => {
-	headerNav.classList.toggle('header__nav--open');
-	burger.classList.toggle('burger--active');
+document.addEventListener('click', e => {
+	if (burger.contains(e.target)) {
+		headerNav.classList.add('header__nav--open');
+	} else if (!burger.contains(e.target)) {
+		handleClick(e);
+	}
 });
+
+const handleClick = e => {
+	if (!headerNav.contains(e.target)) {
+		// headerNav.closest('.container').hidden = true;
+		// headerNav.hidden = true;
+		headerNav.classList.remove('header__nav--open');
+	}
+};
