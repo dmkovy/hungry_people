@@ -11,3 +11,4 @@
 
 #### Overview burger-menu
 <img src="assets/overview_burger-menu.jpg"/>
+<hr/>
